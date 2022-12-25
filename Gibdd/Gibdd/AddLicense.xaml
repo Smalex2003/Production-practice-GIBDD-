@@ -1,0 +1,46 @@
+﻿<Window x:Class="Gibdd.AddLicense"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gibdd"
+        mc:Ignorable="d"
+        Title="Окно добавления ВУ" Icon="resources/flag_russia.png" Background="#b5d5ca" Height="450" Width="500" MinWidth="500" MinHeight="450">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <DatePicker Grid.Row="0" Name="DateFirst" Grid.Column="1" VerticalContentAlignment="Center" Margin="15,10,15,10"></DatePicker>
+        <DatePicker Grid.Row="1" Name="DateLast" Grid.Column="1" VerticalContentAlignment="Center" Margin="15,10,15,10" ></DatePicker>
+        <TextBox Grid.Row="2" Name="SerT" Grid.Column="1" VerticalContentAlignment="Center" Margin="15,10,15,10" MaxLength="5"></TextBox>
+        <TextBox Grid.Row="3" Name="NumT" Grid.Column="1" VerticalContentAlignment="Center" Margin="15,10,15,10" MaxLength="6"></TextBox>
+        <TextBox Grid.Row="4" Name="DriverT" Grid.Column="1" VerticalContentAlignment="Center" Margin="15,10,15,10" MaxLength="4"></TextBox>
+        <ComboBox Grid.Row="5" Name="StatusCmb" Grid.Column="1" VerticalContentAlignment="Center" Margin="15,10,15,10" ></ComboBox>
+        <ComboBox Grid.Row="6" Name="CategoryCmb" Grid.Column="1" VerticalContentAlignment="Center" Margin="15,10,15,10" ></ComboBox>
+        <Label HorizontalAlignment="Center" Grid.Row="0" Grid.Column="0" FontFamily="Comic Sans MS" FontSize="14" VerticalContentAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center">Дата выдачи</Label>
+        <Label HorizontalAlignment="Center" Grid.Row="1" Grid.Column="0" FontFamily="Comic Sans MS" FontSize="14" VerticalContentAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center">Дата окончания</Label>
+        <Label HorizontalAlignment="Center" Grid.Row="2" Grid.Column="0" FontFamily="Comic Sans MS" FontSize="14" VerticalContentAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center">Серия</Label>
+        <Label HorizontalAlignment="Center" Grid.Row="3" Grid.Column="0" FontFamily="Comic Sans MS" FontSize="14" VerticalContentAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center">Номер</Label>
+        <Label HorizontalAlignment="Center" Grid.Row="4" Grid.Column="0" FontFamily="Comic Sans MS" FontSize="14" VerticalContentAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center">Id водителя</Label>
+        <Label HorizontalAlignment="Center" Grid.Row="5" Grid.Column="0" FontFamily="Comic Sans MS" FontSize="14" VerticalContentAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center">Состояние</Label>
+        <Label HorizontalAlignment="Center" Grid.Row="6" Grid.Column="0" FontFamily="Comic Sans MS" FontSize="14" VerticalContentAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center">Категория</Label>
+        <Button Name="AddLicenseBtn" HorizontalAlignment="Center" Background="#fffcd6" Grid.Row="7" Grid.Column="1" FontFamily="Comic Sans MS" FontSize="14" Click="AddLicense_Click" Height="35" VerticalAlignment="Center" Width="150" Content="Добавить лицензию">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </Grid>
+</Window>

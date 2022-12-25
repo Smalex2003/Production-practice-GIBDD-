@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6d945bd64c0b4201af78efb055300d0a" Name="Diagram1">
+        <EntityTypeShape EntityType="GibddModel.CarofAccident" Width="1.5" PointX="5.25" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GibddModel.CatrgoryOfLicense" Width="1.5" PointX="8.25" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GibddModel.Driver" Width="1.5" PointX="0.75" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GibddModel.DriverOfAccident" Width="1.5" PointX="8.25" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GibddModel.EngineType" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GibddModel.License" Width="1.5" PointX="6" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GibddModel.LicenseCategory" Width="1.5" PointX="6" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GibddModel.LicenseState" Width="1.5" PointX="3.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GibddModel.PhotoOfVehicleAccident" Width="1.5" PointX="5.25" PointY="16.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GibddModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="GibddModel.TypeOfDrive" Width="1.5" PointX="0.75" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GibddModel.Vehicle" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GibddModel.VehicleAccident" Width="1.5" PointX="3" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="GibddModel.VehicleColor" Width="1.5" PointX="0.75" PointY="12.25" IsExpanded="true" />
+        <AssociationConnector Association="GibddModel.FK__CarofAcci__Accid__5CD6CB2B" ManuallyRouted="false" />
+        <AssociationConnector Association="GibddModel.FK__CarofAcci__Vehic__5DCAEF64" ManuallyRouted="false" />
+        <AssociationConnector Association="GibddModel.FK__CatrgoryO__Licen__6477ECF3" ManuallyRouted="false" />
+        <AssociationConnector Association="GibddModel.FK__CatrgoryO__Licen__656C112C" ManuallyRouted="false" />
+        <AssociationConnector Association="GibddModel.FK__DriverOfA__Drive__619B8048" ManuallyRouted="false" />
+        <AssociationConnector Association="GibddModel.FK_License_Driver" ManuallyRouted="false" />
+        <AssociationConnector Association="GibddModel.FK_Vehicle_Driver" ManuallyRouted="false" />
+        <AssociationConnector Association="GibddModel.FK__DriverOfA__Vehic__60A75C0F" ManuallyRouted="false" />
+        <AssociationConnector Association="GibddModel.FK_Vehicle_EngineType" ManuallyRouted="false" />
+        <AssociationConnector Association="GibddModel.FK_License_LicenseState" ManuallyRouted="false" />
+        <AssociationConnector Association="GibddModel.FK_PhotoOfVehicleAccident_VehicleAccident" ManuallyRouted="false" />
+        <AssociationConnector Association="GibddModel.FK_Vehicle_TypeOfDrive" ManuallyRouted="false" />
+        <AssociationConnector Association="GibddModel.FK_Vehicle_VehicleColor" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
